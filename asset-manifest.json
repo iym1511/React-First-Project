@@ -1,0 +1,39 @@
+{
+  "files": {
+    "main.css": "/React-First-Project/static/css/main.52d37cf3.css",
+    "main.js": "/React-First-Project/static/js/main.351f3fa5.js",
+    "static/js/787.a61f225c.chunk.js": "/React-First-Project/static/js/787.a61f225c.chunk.js",
+    "static/media/main.jpg": "/React-First-Project/static/media/main.72cee254bf08f064cb99.jpg",
+    "static/media/desc.jpg": "/React-First-Project/static/media/desc.47bc12a2eb16b8107a06.jpg",
+    "static/media/fadeimg.jpg": "/React-First-Project/static/media/fadeimg.0227580492dddf1de919.jpg",
+    "static/media/desc3.jpg": "/React-First-Project/static/media/desc3.4578797eb36239e42ebf.jpg",
+    "static/media/desc2.jpg": "/React-First-Project/static/media/desc2.e48aec6c4015252c47c8.jpg",
+    "static/media/로그인프로필예시사진.jpg": "/React-First-Project/static/media/로그인프로필예시사진.c71a04562089583f8fc3.jpg",
+    "static/media/1-2.png": "/React-First-Project/static/media/1-2.9526f621c835e2dfb687.png",
+    "static/media/insta.jpg": "/React-First-Project/static/media/insta.1bbe9a06e7fb35c6c7e2.jpg",
+    "static/media/insta3.jpg": "/React-First-Project/static/media/insta3.abebcb5e29cda8d016bc.jpg",
+    "static/media/재용띠.jpg": "/React-First-Project/static/media/재용띠.a953d2819b737cca2f56.jpg",
+    "static/media/instagram.png": "/React-First-Project/static/media/instagram.eda378b254c2868f8d2b.png",
+    "static/media/1.png": "/React-First-Project/static/media/1.11489b1201f17706ea56.png",
+    "static/media/facebook.png": "/React-First-Project/static/media/facebook.37263da882a67a17c93f.png",
+    "static/media/insta2.jpg": "/React-First-Project/static/media/insta2.bfa9090bd3f80be3e9e6.jpg",
+    "static/media/youtube.png": "/React-First-Project/static/media/youtube.80aa1a2bd952d447ca87.png",
+    "static/media/fadeimg4.jpg": "/React-First-Project/static/media/fadeimg4.3e3185de4ff5e88071f7.jpg",
+    "static/media/fadeimg2.jpg": "/React-First-Project/static/media/fadeimg2.7b3a944bc9644ef03a82.jpg",
+    "static/media/fadeimg3.jpg": "/React-First-Project/static/media/fadeimg3.e9414b115ee9188ac472.jpg",
+    "static/media/1.jpg": "/React-First-Project/static/media/1.4269dcc37e4d90999364.jpg",
+    "static/media/BMW_White_Logo.svg": "/React-First-Project/static/media/BMW_White_Logo.7fc851202d41ef258cc2.svg",
+    "static/media/slick.svg": "/React-First-Project/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/React-First-Project/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/React-First-Project/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/React-First-Project/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/React-First-Project/index.html",
+    "main.52d37cf3.css.map": "/React-First-Project/static/css/main.52d37cf3.css.map",
+    "main.351f3fa5.js.map": "/React-First-Project/static/js/main.351f3fa5.js.map",
+    "787.a61f225c.chunk.js.map": "/React-First-Project/static/js/787.a61f225c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.52d37cf3.css",
+    "static/js/main.351f3fa5.js"
+  ]
+}
