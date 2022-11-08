@@ -1,0 +1,924 @@
+@font-face {
+  font-family: 'ChosunSg';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@1.0/ChosunSg.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+*{
+  font-family: 'ChosunSg';
+  list-style-type: none;
+}
+.header{
+ 
+}
+body{
+  background-color: #131313;
+}
+html{
+  scroll-behavior: smooth;
+  background-color: #131313;
+}
+.page{
+  position: absolute;
+  top: 69px;
+  bottom: 0;
+  width: 100%;
+  max-width: 100%;
+  padding: 0 20px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+  background-color: #131313;
+  
+}
+/*스크롤 애니메이션*/
+.link {
+  text-decoration: none;
+  display: inline-block;
+  padding: 20px 20px;
+  font-size: large;
+  cursor: pointer;
+}
+
+/* scroll to top button */
+.top-btn-position {
+  position: fixed;
+  bottom: 15px;
+  right: 20px;
+}
+
+.top-btn-style {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  border: 2px solid #333;
+  background-color: #fff;
+  color: #333;
+  cursor: pointer;
+  margin: auto;
+}
+
+.top-btn-style:hover {
+  animation: none;
+  background-color: #333;
+  color: #fff;
+  border: 2px solid #fff;
+}
+
+
+
+
+
+.nav-link1 {
+  color: white;
+  padding-top: 8px;
+}
+
+.nav-link p{
+  color: white;
+  transition: 0.4s;
+  padding-top: 6px;
+  margin-right: 10px;
+  font-size: 18px;
+}
+.nav-link p:hover{
+  color: #818181;
+}
+
+/*슬라이드 텍스트*/
+.Card-Title1{
+  font-size: 20px;
+  transform: translate(-37.5%, 30%);
+}
+.Card-Text1{
+  margin-top: -30px;
+  font-size: 70px;
+  transform: translate(-25.5%, 30%);
+}
+.Card-Text1-2{
+  font-size: 24px;
+  transform: translate(-28.5%, 30%);
+}
+
+.Card-Title2{
+  font-size: 20px;
+  transform: translate(-36%, 30%);
+}
+.Card-Text2{
+  margin-top: -30px;
+  font-size: 70px;
+  transform: translate(-26%, 30%);
+}
+.Card-Text2-2{
+  font-size: 24px;
+  transform: translate(-25.5%, 30%);
+}
+
+.Card-Title3{
+  font-size: 20px;
+  transform: translate(-35%, 30%);
+}
+.Card-Text3{
+  margin-top: -30px;
+  font-size: 70px;
+  transform: translate(-30%, 30%);
+}
+.Card-Text3-2{
+  font-size: 24px;
+  transform: translate(-24.5%, 30%);
+}
+
+
+.login-border{
+  width: 40%;
+  background-color: #ffffff28;
+  height: 700px;
+  margin: auto;
+  border-radius: 4%;
+  
+}
+.titleWrap{
+  margin-top: 40px;
+  margin-bottom: 30px;
+  font-size: 26px;
+  color: rgb(253, 253, 253);
+}
+.contentWrap{
+  margin: auto;
+  flex: 1;
+}
+.inputTitle{
+  font-size: 12px;
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+.inputWrap{
+  display: flex;
+  width: 50%;
+  max-width: 100%;
+  border-radius: 8px;
+  padding: 16px;
+  margin-top: 8px;
+  margin: auto;
+  background-color: white;
+  border: 1px solid rgb(194, 194, 194);
+
+}
+/* 인풋창 클릭하면 태두리색 바뀜 */
+.inputWrap:focus-within{
+  border: 2px solid rgb(35, 130, 253);
+}
+
+.input{
+  margin: auto;
+  width: 100%;
+  outline:  none;
+  border: none;
+  height: 17px;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.input::placeholder{
+  color: rgb(192, 192, 192);
+}
+
+.errorMessageWrap {
+  margin-top: 8px;
+  color: rgb(206, 0, 0);
+  font-size: 15px;
+}
+
+.bottomButton{
+  width: 30%;
+  height: 48px;
+  border-radius: 30px;
+  border: none;
+  background-color: rgb(35, 130, 253);
+  color: white;
+  margin-bottom: 20px;
+  margin-top: 190px;
+  cursor: pointer;
+}
+
+/* 버튼 비활성화일때 회색 */
+.bottomButton:disabled{
+  background-color: rgb(172, 172, 172);
+  color: white;
+}
+
+h1{
+  color: white;
+}
+p{
+  
+}
+.slick-slider{
+  margin-top: 50px;
+}
+.Login-Logo{
+  width: 100px;
+  margin: auto;
+  margin-top: 40px;
+}
+
+
+.slick-list{
+  background-color: #131313;
+  border: none;
+}
+.slick-slide{
+  background-color: #131313;
+}
+.btn-outline-primary{
+  --bs-btn-border-color: #ffffff;
+}
+.JJim{
+  width: 200px;
+}
+
+
+
+
+/* 스크롤바 커스텀 */
+body::-webkit-scrollbar {
+  width: 6px;  /* 스크롤바의 너비 */
+}
+body::-webkit-scrollbar-thumb {
+  height: 10%; /* 스크롤바의 길이 */
+  background: #444444; /* 스크롤바의 색상 */
+  
+  border-radius: 100px;
+}
+
+body::-webkit-scrollbar-thumb:hover{
+  background-color: #818181;
+}
+
+body::-webkit-scrollbar-track {
+  background: #131313;  /*스크롤바 뒷 배경 색상*/
+}
+
+
+.Comment-Color{
+  color: black;
+}
+.card-img-overlay{
+
+}
+.top-grd{
+  z-index: 11;
+  height: 100px;
+  margin-bottom: -124px;
+  color: #0e0e0e;
+}
+
+
+.Main-Card{
+  width: 100%;
+}
+.Main-Card-title{
+  color: white;
+  margin-top: 60px;
+  font-size: 50px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.Main-Card-Subtitle{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 50px;
+  color: white;
+}
+
+.he{
+  
+}
+
+
+/* 스크롤 택스트 애니메이션 */
+.wrapper {
+  width: 100%;
+  overflow: hidden;
+  min-height: 1500px;
+  height: 100vh;
+  
+}
+
+.wrapper .scroll-down {
+  z-index:11; /*숫자가 클수록 앞에 옴*/
+  position: fixed;
+  width: 42px;
+  height: 64px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  bottom: 82px;
+
+  border-radius: 50px;
+}
+.scroll-down::before, .scroll-down::after{
+  content: '';
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  border: 2px solid rgb(255, 255, 255);
+  height: 10px;
+  width: 10px;
+  transform: translate(-50%, -50%) rotate(45deg);
+  border-top: transparent;
+  border-left: transparent;
+  animation: MoveArrow 1s ease-in-out infinite;
+}
+
+.scroll-down::after{
+  top: 30%;
+  animation-delay: 0.3s;
+}
+@keyframes MoveArrow{
+  0%{
+    opacity: 0;
+  }
+  30%{
+    opacity: 1;
+  }
+  60%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+    top: 90%;
+  }
+}
+
+.wrapper div,
+.wrapper p {
+  position: relative;
+}
+
+.item {
+  position: absolute;
+  top: 1600px;
+  right: 0;
+  opacity: 0.5;
+  z-index: 1;
+  
+}
+
+.item_snow {
+  left: 100px;
+  right: auto;
+  width: 200px;
+  opacity: 1;
+}
+
+.bg {
+  width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  height: 400px;
+  justify-content: center;
+  align-items: center;
+}
+
+.bg div {
+  
+}
+
+.bg1 {
+  background: url(./img/desc3.jpg) no-repeat;
+}
+
+.bg2 {
+  margin-top: 200px;
+  margin-bottom: 70px;
+  background: url(./img/desc2.jpg) no-repeat;
+  margin-left: 150px;
+}
+.bg2-all{
+  
+}
+.bg2 .bg2-p{
+  font-size: 40px;
+  color: white;
+  display: flex;
+  margin-left: 35%;
+}
+
+.desc-all{
+  margin-top: 120px;
+}
+.desc .desc1{
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+  left: 50%;
+  
+}
+.desc {
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+  left: 50%;
+}
+
+.desc2 {
+  font-weight: bold;
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+  right: 50%;
+}
+
+.desc3 {
+  text-align: center;
+  font-size: 30px;
+  color: rgb(255, 255, 255);
+  opacity: 1;
+}
+.desc3-1{
+  background: url(./img/desc3.jpg) no-repeat center;
+  width: 800px;
+  height: 600px;
+  margin-bottom: 100px;
+  margin-left: 200px;
+}
+.desc3-1-Card{
+  display: flex;
+  flex-direction: row;
+  text-align: start;
+}
+.desc3-1-Card div{
+  width: 100%;
+  margin-left: 60px;
+
+  line-height: 75px;
+  font-size: 20px;
+  color: white;
+   white-space: nowrap;
+}
+
+
+/* -----fade---------- */
+.fade-title{
+  margin-top: 200px;
+  margin-bottom: 100px;
+}
+.boxes1{
+  margin:20px;
+  margin-top: 150px;
+  background-color: #ffffff00;
+  overflow: hidden;
+  color: white;
+  box-shadow: 0px 12px 180x -6px rgba(0,0,0,0.3);
+  border-radius: 10px 10px 10px 10px;
+}
+.boxes2{
+  margin:20px;
+  margin-top: 150px;
+  background-color: #ffffff00;
+  overflow: hidden;
+  color: white;
+  box-shadow: 0px 12px 180x -6px rgba(0,0,0,0.3);
+  border-radius: 10px 10px 10px 10px;
+}
+.boxes3{
+  margin:20px;
+  margin-top: 150px;
+  background-color: #ffffff00;
+  overflow: hidden;
+  color: white;
+  box-shadow: 0px 12px 180x -6px rgba(0,0,0,0.3);
+  border-radius: 10px 10px 10px 10px;
+}
+.grids{
+  max-width: 100%;
+  margin: auto;
+}
+.fade-image{
+  
+  position: relative;
+  margin: 10px auto;
+  border: 1px solid;
+}
+.fade-img1 img{
+  width: 100%;
+  vertical-align: middle;
+  filter: brightness(0.6);
+}
+.fade-text{
+  position: absolute;
+  top: 20%;
+  left: 20%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+  position: fixed;
+  font-size: 25px;
+  color: rgb(255, 255, 255);
+}
+.fade-text2{
+  position: absolute;
+  top: 28%;
+  left: 20%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+  position: fixed;
+  font-size: 15px;
+  color: rgb(255, 255, 255);
+}
+
+
+.fade-img2{
+  width: 35%;
+  display: flex;
+  margin-right: auto;
+  margin-left:100px;
+  float: left;
+}
+.fade-img3{
+  width: 35%;
+  display: flex;
+  margin-left: auto;
+  margin-right:100px;
+  float: right;
+}
+.fade-img4{
+  width: 35%;
+  display: flex;
+  margin-right: auto;
+  margin-left:100px;
+  float: left;
+}
+
+.fade-img2-tag{
+  color: white;
+  margin-top: 30px;
+  display: inline-block;
+  margin-right: 200px;
+  text-align: left;
+}
+.fade-img2-tag2{
+  margin-top: 30px;
+  display: inline-block;
+  margin-right: 230px;
+  text-align: left;
+}
+
+.fade-img3-tag{
+  color: white;
+  margin-top: 30px;
+  display: inline-block;
+  margin-left: 301px;
+  text-align: right;
+}
+.fade-img3-tag2{
+  margin-top: 30px;
+  display: inline-block;
+  margin-left: 150px;
+  text-align: right;
+}
+
+.fade-img4-tag{
+  color: white;
+  margin-top: 30px;
+  display: inline-block;
+  margin-right: 285px;
+  text-align: left;
+}
+.fade-img4-tag2{
+  margin-top: 30px;
+  display: inline-block;
+  margin-right: 65px;
+  text-align: left;
+}
+
+
+.insta-Box{
+  width: 100%;
+  margin-top: 200px;
+  margin-bottom: 100px;
+  
+  color: white;
+}
+.insta-p{
+  font-size: 30px;
+  margin-bottom: -40px;
+}
+.insta-Card{
+  width: 400px;
+  height: 500px;
+  margin-left: -100px;
+  overflow: hidden;
+  display: inline-block;
+}
+.insta-Card2{
+  width: 400px;
+  height: 500px;
+  margin-left: 30px;
+  overflow: hidden;
+  display: inline-block;
+}
+.insta-Card3{
+  width: 400px;
+  height: 500px;
+  margin-left: 30px;
+  overflow: hidden;
+  display: inline-block;
+}
+.insta-img{
+  width: 100%;
+  height: 450px;
+  transition:0.5s;
+  filter: brightness(100%);
+  margin:100px;
+}
+.insta-img:hover{
+  cursor: pointer;
+  transform: scale(1.1);
+  -o-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+
+  transition: transform.35s;
+  -o-transition: transform.35s;
+  -moz-transition: transform.35s;
+  -webkit-transition: transform.35s;
+  filter: brightness(50%);
+}
+
+
+
+
+
+
+
+/* footer */
+.footer{
+  margin-top: 100px;
+  width: 100%;
+  background-color: #131313;
+  border-top: 1px solid #444444;
+  height: 200px;
+  color: white;
+}
+.footer img{
+  margin-top: 30px;
+  
+}
+.footer p {
+  margin-top: 15px;
+  margin-bottom: 0px;
+}
+.facebook{
+  width: 30px;
+  color: white;
+}
+.footer-img{
+  padding: 10px;
+  font-size: 30px;
+}
+.footer a{
+  color: inherit;
+}
+.footer a:hover{
+  color: #d1d1d1;
+}
+
+.list-group-item{
+  background-color: #131313;
+}
+
+
+/* 찜목록 */
+.like-title{
+  margin-left: 15px;
+  align-items: center;
+  width: 50%;
+  height: 50px;
+  margin-top: 13px;
+  padding-top: 5px;
+  border: 1px solid white;
+  border-radius: 10px;
+  display: inline-block;
+  
+}
+.like-span{
+  display: inline-block;
+  margin-right: 200px;
+}
+.like-list{
+  text-align:start;
+  margin-top: 20px;
+}
+.like-name{
+  display: flex;
+  align-items: center;
+  width: 50%;
+  height: 100px;
+  margin-top: 40px;
+  padding-left: 20px;
+  border: 1px solid white;
+  border-radius: 10px;
+  margin: 30px auto;
+  background-color: #202020;
+}
+.product-list{
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.like-name img{
+  width: 150px;
+  border: 1px solid rgba(189, 189, 189, 0.295);
+  border-radius: 10%;
+  margin-left: 20px;
+  margin-right: 40px;
+  background-color: #161616;
+}
+
+
+
+/* 댓글 페이지*/
+.card1{
+  position: relative;
+  width: 100%;
+  height: 250px;
+  transition: 0.5s;
+  margin-bottom: -50px;
+}
+.card1:hover{
+  height: 450px;
+}
+.card1 .lines{
+  position: absolute;
+  inset: 0;
+  background-color: rgb(128, 128, 128);
+  overflow: hidden;
+  width: 33.5%;
+  margin: auto;
+  margin-top: 20px;
+  padding-bottom: 50px;
+}
+.card1 .lines::before{
+  content: '';
+  position:absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 1800px;
+  height: 120px;
+  background:linear-gradient(transparent, white, white, white,transparent);
+  animation: animate 4s linear infinite;
+}
+@keyframes animate
+{
+  0%{
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100%{
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+.card1 .lines::after{
+  content: '';
+  position: absolute;
+  inset: 1px;
+  background-color: #131313;
+
+}
+.card1 .imgBx{
+  position:absolute;
+  top: -5%;
+  left: 50%;
+  transform: translate(-50%);
+  width: 270px;
+  height: 200px;
+  transition: 0.5s;
+  overflow: hidden;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 10px;
+} 
+.card1:hover .imgBx{
+  width: 160px;
+  height: 120px;   
+  z-index: 10;
+}
+.card1 .imgBx::before{
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 500px;
+  height: 150px;
+  transform: translate(-50%, -50%);
+  background:linear-gradient(transparent, white, white, white,transparent);
+  animation: animate2 6s linear infinite;
+}
+@keyframes animate2{
+  0%{
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+  100%{
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+}
+.card1 .imgBx::after{
+  content: '';
+  position: absolute;
+  inset: 1px;
+  background-color: #202020
+}
+.card1 .imgBx .card1-name{
+  position: absolute;
+  z-index: 10;
+  width: calc(100% -20px);
+  height: calc(100% - 20px);
+  left: -3%;
+}
+.card1 .content1{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  overflow: hidden;
+  
+}
+.card1 .content1 .details{
+  padding: 40px;
+  text-align: center;
+  width: 100%;
+  transform: 0.5s;
+  transform: translateY(295px);
+  transition: 0.5s;
+  
+}
+.card1:hover .content1 .details{
+  transform: translateY(5px);
+}
+.card1 .content1 .details h2{
+  color: white;
+  line-height: 1.2em;
+  margin-bottom:50px ;
+  z-index: 1;
+  transition: 0.5s;
+}
+.card1 .content1 .details h2:hover{
+  transition: 0.5s;
+}
+.card1 .content1 .details .data{
+  display: inline;
+  margin: 20px 0;
+  
+}
+.card1 .content1 .details .data p{
+  font-size: 1em;
+  color: white;
+  line-height: 1.2em;
+  font-weight: bold;
+  padding-top: 20px;
+}
+
+.color-Name{
+  color: white;
+  
+}
+
+
+/*카카오맵*/
+.map-Title{
+  color: white;
+  font-size: 30px;
+  margin-top: 200px;
+  margin-bottom: 50px;
+}
+
+
+
+
+/* Top 버튼 */
+.top{
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  padding: 10px;
+  background-color: #00000000;
+  color: white;
+  border: 2px solid white;
+  margin-top: 50px;
+  right: 0;
+  bottom: 0;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  position: fixed;
+  font-weight: bold;
+  transition: 0.5s;
+}
+.top:hover{
+  background-color: #818181;
+  border: 2px solid #818181;
+}
+
+
+/**/
