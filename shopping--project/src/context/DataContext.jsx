@@ -25,7 +25,7 @@ const DataProvider = ({children}) => {
             productId : 1,
             productName : "BMW i4",
             productEngin : "순수 전기",
-            productMoney : "$ 66,400,000",
+            productMoney : 66400000,
             productElc : "7.14km/kWh",
             productKm : "250 ~ 400 마력",
             productDetail : "BMW i4 M50 ",

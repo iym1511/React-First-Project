@@ -91,7 +91,7 @@ const Login = () => {
     <div className="page" >
       
       <div className="login-border">
-    <img src="https://customer.bmwgroup.com/oneid/oneidconfig/assets/brand/bmw/bmw_logo.svg" className="Login-Logo" />
+            <img src="https://customer.bmwgroup.com/oneid/oneidconfig/assets/brand/bmw/bmw_logo.svg" className="Login-Logo" />
             <div className="titleWrap">
                 BMW ID 로그인
                 <br />
@@ -99,7 +99,7 @@ const Login = () => {
             </div>
 
             <div className="contentWrap">
-                <div className="inputTitle" >이메일 주소</div>
+                <div className="inputTitle" >E-mail</div>
                 <div className="inputWrap">
                     <input className="input" 
                     type="text"
@@ -118,7 +118,7 @@ const Login = () => {
                 </div>
 
 
-                <div className="inputTitle" style={{marginTop:"10px"}}>비밀번호</div>
+                <div className="inputTitle" style={{marginTop:"10px"}}>PW</div>
                 <div className="inputWrap">
                     <input className="input" 
                     type="password"

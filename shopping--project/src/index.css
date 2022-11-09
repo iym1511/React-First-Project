@@ -20,7 +20,7 @@ html{
 }
 .page{
   position: absolute;
-  top: 69px;
+  top: 85px;
   bottom: 0;
   width: 100%;
   max-width: 100%;
@@ -31,8 +31,8 @@ html{
 
   display: flex;
   flex-direction: column;
-  background-color: #131313;
-  
+  background-image: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url(./img/img1.daumcdn.jpg) ;
+  background-size: cover;
 }
 /*스크롤 애니메이션*/
 .link {
@@ -137,8 +137,6 @@ html{
   background-color: #ffffff28;
   height: 700px;
   margin: auto;
-  border-radius: 4%;
-  
 }
 .titleWrap{
   margin-top: 40px;
@@ -159,17 +157,15 @@ html{
   display: flex;
   width: 50%;
   max-width: 100%;
-  border-radius: 8px;
   padding: 16px;
   margin-top: 8px;
   margin: auto;
-  background-color: white;
-  border: 1px solid rgb(194, 194, 194);
+  border-bottom: 1px solid rgb(194, 194, 194);
 
 }
 /* 인풋창 클릭하면 태두리색 바뀜 */
 .inputWrap:focus-within{
-  border: 2px solid rgb(35, 130, 253);
+  border: 1px solid rgb(233, 233, 233);
 }
 
 .input{
@@ -180,6 +176,8 @@ html{
   height: 17px;
   font-size: 14px;
   font-weight: 400;
+  background-color: #0e0e0e00;
+  color: white;
 }
 
 .input::placeholder{
@@ -195,18 +193,21 @@ html{
 .bottomButton{
   width: 30%;
   height: 48px;
-  border-radius: 30px;
   border: none;
   background-color: rgb(35, 130, 253);
   color: white;
   margin-bottom: 20px;
   margin-top: 190px;
   cursor: pointer;
+  transition: 0.5s;
+}
+.bottomButton:hover{
+  background-color: rgb(0, 65, 150);
 }
 
 /* 버튼 비활성화일때 회색 */
 .bottomButton:disabled{
-  background-color: rgb(172, 172, 172);
+  background-color: rgba(172, 172, 172, 0.281);
   color: white;
 }
 
@@ -223,6 +224,10 @@ p{
   width: 100px;
   margin: auto;
   margin-top: 40px;
+}
+.Login-Logo2{
+  float: left;
+  width: 300px;
 }
 
 
@@ -701,7 +706,14 @@ body::-webkit-scrollbar-track {
   border: 1px solid white;
   border-radius: 10px;
   display: inline-block;
-  
+  margin: 0 10px 30px auto;
+}
+.like-border{
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 1px solid white;
+  width: 700px;
+  margin: auto;
 }
 .like-span{
   display: inline-block;
@@ -712,13 +724,12 @@ body::-webkit-scrollbar-track {
   margin-top: 20px;
 }
 .like-name{
-  display: flex;
-  align-items: center;
-  width: 50%;
+  width:700px;
   height: 100px;
   margin-top: 40px;
   padding-left: 20px;
-  border: 1px solid white;
+  border-bottom: 1px solid white;
+  border-top: 1px solid white;
   border-radius: 10px;
   margin: 30px auto;
   background-color: #202020;
@@ -726,9 +737,16 @@ body::-webkit-scrollbar-track {
 .product-list{
   left: 0;
   right: 0;
-  margin: auto;
+  margin: 0 10px auto;
+}
+.product-list .product-span1{
+  font-weight: bolder;
+}
+.product-list .product-span2{
+  margin-left: 20px;
 }
 .like-name img{
+  margin-top: 4px;
   width: 150px;
   border: 1px solid rgba(189, 189, 189, 0.295);
   border-radius: 10%;
@@ -736,7 +754,24 @@ body::-webkit-scrollbar-track {
   margin-right: 40px;
   background-color: #161616;
 }
-
+.upBtn1{
+  width: 30px;
+  height: 30px;
+  margin-left: 70px;
+  background-color: #000000;
+  color: white;
+  border: 1px solid white;
+  border-radius: 100%;
+}
+.downBtn1{
+  width: 30px;
+  height: 30px;
+  margin-left: 7px;
+  background-color: #000000;
+  color: white;
+  border-radius: 100%;
+  border: 1px solid white;
+}
 
 
 /* 댓글 페이지*/

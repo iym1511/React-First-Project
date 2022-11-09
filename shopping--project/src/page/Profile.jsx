@@ -1,12 +1,32 @@
-import { useContext } from "react";
+import { useContext, useReducer, useState } from "react";
 import { Container, Row,Col } from "react-bootstrap";
 import DataContext from "../context/DataContext";
 import ProfileUpdateModal from "../components/ProfileUpdateModal"
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faFacebook, faInstagram,faYoutube } from '@fortawesome/free-brands-svg-icons'
 
+
 const Profile = ({onRemove}) => {
     const {state} = useContext(DataContext);
+    const [number, setNumber] = useState(1);
+    const [money, setMoney] = useState(0);
+    // 리듀서 생성
+    const [count, countDispatch] = useReducer(countReducer,0);
+    
+    function countReducer(oldCount, action){
+        if(action.type === "UP"){
+            return oldCount+ action.number
+        }else if(action.type === "DOWN"){
+            return oldCount- action.number
+        }
+    }
+
+    function down() {
+        countDispatch({type:'DOWN', number: number})
+    }
+    function up() {
+        countDispatch({type:'UP', number: number})
+    }
     return (  
         <div>
             <Container>
@@ -32,20 +52,29 @@ const Profile = ({onRemove}) => {
                     <div>
                     {/* 이름과 찜목록을 출력 */}
                     <hr></hr>
-                    <h2 className="like-title">찜 목록</h2>
+                    <h2 className="like-title">장바구니</h2>
                     <ul className="like-list">
+                    <div className="like-border">
+                        <span>Car Name</span>
+                        <span>가격</span>
+                        <span>개수</span>
+                    </div>
                     {
                         state.user.likelist.map((like)=>(<li className="like-name" >
                             <div className="product-list">
-                                {like.productName}
+                                <span className="product-span1">{like.productName}</span>
                                 <img src={require(`../img/${like.productPicture[0]}`)}></img>
-                                {like.productMoney}
+                                <span className="product-span2">{like.productMoney}
+                                    <input type="button" value="+" onClick={up} className="upBtn1"/>
+                                    <input type="button" value="-" onClick={down} className="downBtn1"/>
+                                    <span style={{marginLeft:"20px"}}>수량 : {count}</span>
+                                </span>
                             </div>
-                            
                         </li>))
                     }
                     
                     </ul>
+                    
                     <footer className="footer">
                         <img src="https://www.bmw.co.kr/etc.clientlibs/ds2-webcomponents/clientlibs/clientlib/resources/img/BMW_White_Logo.svg" alt="" />
                         <p>© Copyright 2022 BMW Motor Company.</p>
