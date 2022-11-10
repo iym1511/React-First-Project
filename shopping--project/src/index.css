@@ -754,6 +754,9 @@ body::-webkit-scrollbar-track {
   margin-right: 40px;
   background-color: #161616;
 }
+.updown-All{
+  
+}
 .upBtn1{
   width: 30px;
   height: 30px;
@@ -919,6 +922,13 @@ body::-webkit-scrollbar-track {
   color: white;
   
 }
+.Link{
+  text-decoration: none;
+  color: rgb(139, 139, 139);
+  font-weight: bold;
+}
+
+
 
 
 /*카카오맵*/

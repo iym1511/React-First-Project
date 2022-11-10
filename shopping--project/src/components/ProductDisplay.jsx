@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Button, Col, Container, Row } from "react-bootstrap";
+import {Link} from 'react-router-dom'
 
 const ProductDisplay = (props) => {
   const {product} = props;
@@ -48,11 +49,15 @@ const ProductDisplay = (props) => {
               <Button variant="outline-light" size="lg" style={{border:"1px solid white"}}>
                 구매
               </Button>
-              <Button variant="outline-light" size="lg" >
-                장바구니
-              </Button><Button variant="outline-light" size="lg">
+              <Link to="/mypage" className="Link" variant="outline-light" >
+              <Button variant="outline-light" size="lg" style={{width:"100%", textAlign:"center"}}>
+              장바구니
+              </Button>
+              </Link>
+              <Button variant="outline-light" size="lg">
                 찜
               </Button>
+              
             </div>
           </div>
         {/* </Col> */}

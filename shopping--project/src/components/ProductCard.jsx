@@ -65,7 +65,6 @@ function ProductCard(props) {
         ...data.state.user,
         likelist : newLikeList
       })
-      console.log(like)
       setLikCheck(true);
     }
 

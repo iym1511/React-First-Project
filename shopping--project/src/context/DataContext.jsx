@@ -4,6 +4,7 @@
 import { useState } from "react";
 import { createContext } from "react";
 import { NavItem } from "react-bootstrap";
+import Profile from "../page/Profile";
 // 내보낸 DataContext에 value을 넣어줘서 사용
 const DataContext = createContext();
 
@@ -25,7 +26,7 @@ const DataProvider = ({children}) => {
             productId : 1,
             productName : "BMW i4",
             productEngin : "순수 전기",
-            productMoney : 66400000,
+            productMoney : "$ 66,400,000",
             productElc : "7.14km/kWh",
             productKm : "250 ~ 400 마력",
             productDetail : "BMW i4 M50 ",
@@ -93,8 +94,17 @@ const DataProvider = ({children}) => {
     // DataProvider를 사용할때 DataContext.Provider를 사용할수 있도록함
     // 이때 children은 Provider을 쓸때 데이터를 공용을 쓰는 컴포넌트들
 
-    return <DataContext.Provider value={value}>{children}</DataContext.Provider>
+    const onRemove = (productId) => {
+        setProductList(productList.filter(productLists => productLists.productId !== productId))
+    }
+    return (
+        <div>
+            <DataContext.Provider value={value} onRemove={onRemove} >{children}</DataContext.Provider>
+            
+        </div>
+    )
 };
+
 
 
 // consumer 작성

@@ -1,4 +1,4 @@
-import { useContext, useReducer, useState } from "react";
+import { useContext, useEffect, useReducer, useState } from "react";
 import { Container, Row,Col } from "react-bootstrap";
 import DataContext from "../context/DataContext";
 import ProfileUpdateModal from "../components/ProfileUpdateModal"
@@ -6,7 +6,7 @@ import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faFacebook, faInstagram,faYoutube } from '@fortawesome/free-brands-svg-icons'
 
 
-const Profile = ({onRemove}) => {
+const Profile = ({productLists, onRemove}) => {
     const {state} = useContext(DataContext);
     const [number, setNumber] = useState(1);
     const [money, setMoney] = useState(0);
@@ -27,6 +27,9 @@ const Profile = ({onRemove}) => {
     function up() {
         countDispatch({type:'UP', number: number})
     }
+
+    
+
     return (  
         <div>
             <Container>
@@ -65,9 +68,12 @@ const Profile = ({onRemove}) => {
                                 <span className="product-span1">{like.productName}</span>
                                 <img src={require(`../img/${like.productPicture[0]}`)}></img>
                                 <span className="product-span2">{like.productMoney}
+                                <span className="updown-All">
                                     <input type="button" value="+" onClick={up} className="upBtn1"/>
                                     <input type="button" value="-" onClick={down} className="downBtn1"/>
+                                    <button onClick={()=>onRemove(productLists.productId)}>삭제띠</button>
                                     <span style={{marginLeft:"20px"}}>수량 : {count}</span>
+                                </span>
                                 </span>
                             </div>
                         </li>))
