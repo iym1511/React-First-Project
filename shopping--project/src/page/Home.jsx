@@ -143,14 +143,18 @@ const Home = ({menu, movePage}) => {
                         {data.state.user.name} 님
                         </div>
                         <NavLink className="nav-link" to="/mypage" style={{margin:"5px", marginLeft:"8px"}}>
-                        마이페이지
+                        <img src="https://www.genesis.com/content/dam/genesis-p2/kr/assets/gnb-footer/genesis-kr-gnb-mypage-icon-01-tablet-34x38-ko.png" style={{width:"50%"}}/>
                         </NavLink>
-                        <Button variant="outline-light" onClick={ logOut }>Logout</Button>{" "}
+                        <Button variant="outline-light" onClick={ logOut } style={{border:"none", borderBottom:"1px solid white", borderRadius:"0", height:"34px", marginTop:"4px"}}>
+                            Logout
+                        </Button>{" "}
                     </Nav>
                     ) : (
                     <div>
                         {/** 로그인이 되지 않았을때 출력될 컴포넌트 */}
-                        <Button variant="outline-light" onClick={()=>{navigate('/loginform')}} style={{border:"1px solid white", width:"70px", height:"50px", marginBottom:"30px"}}>Login</Button>{" "}
+                        <Button variant="outline-light" onClick={()=>{navigate('/loginform')}} style={{border:"none", borderBottom:"1px solid white", borderRadius:"0", width:"70px", height:"34px", marginBottom:"38px"}}>
+                            Login
+                        </Button>{" "}
                     </div>
                     )}
                 </Navbar.Collapse>
