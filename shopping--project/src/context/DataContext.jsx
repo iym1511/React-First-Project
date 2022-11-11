@@ -73,7 +73,7 @@ const DataProvider = ({children}) => {
             commentId : 1,
             productId : 1,
             name : "이재용",
-            text : "좋은 차량입니다"
+            text : "GOOD"
         },
         {
             /* commentId : 2,
@@ -88,14 +88,14 @@ const DataProvider = ({children}) => {
     
     // 사용할 value 값을 state와 action 분리해서 넣어둠
     const value = {
-        state : {user, productList, allComments, commentCount},
-        action : {setUser, setProductList, setAllComments, setCommentCount}
+        state : {user, productList, allComments, commentCount, mysave},
+        action : {setUser, setProductList, setAllComments, setCommentCount, setMysave}
     };
     // DataProvider를 사용할때 DataContext.Provider를 사용할수 있도록함
     // 이때 children은 Provider을 쓸때 데이터를 공용을 쓰는 컴포넌트들
 
     const onRemove = (productId) => {
-        setProductList(productList.filter(productLists => productLists.productId !== productId))
+        setProductList(productList.filter(productLists => productLists.productId !== productId));
     }
     return (
         <div>

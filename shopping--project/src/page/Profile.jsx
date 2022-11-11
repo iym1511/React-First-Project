@@ -16,13 +16,20 @@ const Profile = ({productLists, onRemove}) => {
     function countReducer(oldCount, action){
         if(action.type === "UP"){
             return oldCount+ action.number
+            
         }else if(action.type === "DOWN"){
-            return oldCount- action.number
+            return state.user.likelist.map((like)=>{
+                if(like.productId === 1){
+                    oldCount- action.number;
+                }
+            })
+            //  oldCount- action.number
         }
     }
 
     function down() {
         countDispatch({type:'DOWN', number: number})
+        
     }
     function up() {
         countDispatch({type:'UP', number: number})
@@ -71,7 +78,7 @@ const Profile = ({productLists, onRemove}) => {
                                 <span className="updown-All">
                                     <input type="button" value="+" onClick={up} className="upBtn1"/>
                                     <input type="button" value="-" onClick={down} className="downBtn1"/>
-                                    <button onClick={()=>onRemove(productLists.productId)}>삭제띠</button>
+                                    {/* <button onClick={()=>onRemove(state.productLists.productId)}>삭제</button> */}
                                     <span style={{marginLeft:"20px"}}>수량 : {count}</span>
                                 </span>
                                 </span>
