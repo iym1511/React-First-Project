@@ -32,7 +32,7 @@ const ProductDetaile = () => {
             <ListGroup style={{textAlign : "left"}}>
                 {
                     // 댓글 출력
-                    comments.map((comment)=>( <Comment key={comment.commentId} comment={comment}/>))
+                    comments.map((comment)=>( <Comment key={comment.commentId} comment={comment} />))
                 }
             </ListGroup>
 

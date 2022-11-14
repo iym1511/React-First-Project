@@ -724,7 +724,7 @@ body::-webkit-scrollbar-track {
   margin-top: 20px;
 }
 .like-name{
-  width:700px;
+  width: 890px;
   height: 100px;
   margin-top: 40px;
   padding-left: 20px;
@@ -743,7 +743,7 @@ body::-webkit-scrollbar-track {
   font-weight: bolder;
 }
 .product-list .product-span2{
-  margin-left: 20px;
+  margin-left: 30px;
 }
 .like-name img{
   margin-top: 4px;
@@ -760,7 +760,7 @@ body::-webkit-scrollbar-track {
 .upBtn1{
   width: 30px;
   height: 30px;
-  margin-left: 70px;
+  margin-left: 20px;
   background-color: #000000;
   color: white;
   border: 1px solid white;
@@ -775,6 +775,31 @@ body::-webkit-scrollbar-track {
   border-radius: 100%;
   border: 1px solid white;
 }
+.date{
+  float: right;
+  margin-top: 33px;
+  margin-left: 20px;
+  
+}
+.example-custom-input{
+  background-color: #80808000;
+  border: none;
+  border-bottom: 1px solid white;
+  /* border-radius: 5px; */
+  color: white;
+  transition: 0.5s;
+}
+.example-custom-input:hover{
+  border-bottom: 1px solid rgb(150, 150, 150);
+  color:rgb(150, 150, 150);
+}
+
+
+
+
+
+
+
 
 
 /* 댓글 페이지*/
@@ -807,16 +832,16 @@ body::-webkit-scrollbar-track {
   width: 1800px;
   height: 120px;
   background:linear-gradient(transparent, white, white, white,transparent);
-  animation: animate 4s linear infinite;
+  animation: animate 0.1s linear infinite;
 }
-@keyframes animate
-{
+@keyframes animate {
   0%{
-    transform: translate(-50%, -50%) rotate(0deg);
+      background-position: 10%;
   }
   100%{
-    transform: translate(-50%, -50%) rotate(360deg);
+      background-position: 300%;
   }
+  
 }
 .card1 .lines::after{
   content: '';
@@ -835,7 +860,6 @@ body::-webkit-scrollbar-track {
   transition: 0.5s;
   overflow: hidden;
   border: 1px solid rgb(255, 255, 255);
-  border-radius: 10px;
 } 
 .card1:hover .imgBx{
   width: 160px;
@@ -865,7 +889,8 @@ body::-webkit-scrollbar-track {
   content: '';
   position: absolute;
   inset: 1px;
-  background-color: #202020
+  background-color: #202020;
+  
 }
 .card1 .imgBx .card1-name{
   position: absolute;

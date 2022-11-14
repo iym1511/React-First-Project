@@ -9,7 +9,7 @@ const Comment = (props) => {
     const {state} = useContext(DataContext)
     const {comment} = props
     return (  
-        <ListGroup.Item style={{backgroundColor:"#141414", color:"white"}}>
+        <ListGroup.Item style={{backgroundColor:"#131313", color:"white", border:"none", borderBottom:"1px solid white", marginLeft:"100px",marginRight:"100px"}}>
             <div style={{backgroundImage:`url(${state.user.profile})`,backgroundSize:'cover', 
                 border:"1px solid white", width:"30px", height:"30px",
                 borderRadius:"10%", backgroundRepeat:"no-repeat", display:"inline-block"}}>
