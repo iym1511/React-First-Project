@@ -1,9 +1,10 @@
 {
   "files": {
-    "main.css": "/React-First-Project/static/css/main.52d37cf3.css",
-    "main.js": "/React-First-Project/static/js/main.351f3fa5.js",
+    "main.css": "/React-First-Project/static/css/main.3823826d.css",
+    "main.js": "/React-First-Project/static/js/main.2493b290.js",
     "static/js/787.a61f225c.chunk.js": "/React-First-Project/static/js/787.a61f225c.chunk.js",
     "static/media/main.jpg": "/React-First-Project/static/media/main.72cee254bf08f064cb99.jpg",
+    "static/media/img1.daumcdn.jpg": "/React-First-Project/static/media/img1.daumcdn.c2882935af558e53db1a.jpg",
     "static/media/desc.jpg": "/React-First-Project/static/media/desc.47bc12a2eb16b8107a06.jpg",
     "static/media/fadeimg.jpg": "/React-First-Project/static/media/fadeimg.0227580492dddf1de919.jpg",
     "static/media/desc3.jpg": "/React-First-Project/static/media/desc3.4578797eb36239e42ebf.jpg",
@@ -28,12 +29,12 @@
     "static/media/slick.ttf": "/React-First-Project/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/React-First-Project/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/React-First-Project/index.html",
-    "main.52d37cf3.css.map": "/React-First-Project/static/css/main.52d37cf3.css.map",
-    "main.351f3fa5.js.map": "/React-First-Project/static/js/main.351f3fa5.js.map",
+    "main.3823826d.css.map": "/React-First-Project/static/css/main.3823826d.css.map",
+    "main.2493b290.js.map": "/React-First-Project/static/js/main.2493b290.js.map",
     "787.a61f225c.chunk.js.map": "/React-First-Project/static/js/787.a61f225c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.52d37cf3.css",
-    "static/js/main.351f3fa5.js"
+    "static/css/main.3823826d.css",
+    "static/js/main.2493b290.js"
   ]
 }
