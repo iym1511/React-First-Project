@@ -9,8 +9,10 @@ import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import { ko } from 'date-fns/esm/locale';
 
-const Profile = ({productLists, onRemove}) => {
-    const {state} = useContext(DataContext);
+const Profile = () => {
+    const {state, action} = useContext(DataContext);
+
+    
     const [number, setNumber] = useState(1);
     const [money, setMoney] = useState(0);
     const [startDate, setStartDate] = useState(new Date());
@@ -37,9 +39,10 @@ const Profile = ({productLists, onRemove}) => {
     }
     function up() {
         countDispatch({type:'UP', number: number})
-    }
 
-    
+    }
+ 
+
 
     return (  
         <div>
@@ -73,7 +76,7 @@ const Profile = ({productLists, onRemove}) => {
                         <span> 가격</span>
                         <span></span>
                         <span></span>
-                        <span></span>
+                        <button onClick={action.onRemove} style={{backgroundColor:"#131313",border:"1px solid gray",borderRadius:"10px",color:"white",fontWeight:"bold"}}>전체삭제</button>
                     </div>
                     {
                         state.user.likelist.map((like)=>(<li className="like-name" >

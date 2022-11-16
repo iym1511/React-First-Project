@@ -832,7 +832,7 @@ body::-webkit-scrollbar-track {
   width: 1800px;
   height: 120px;
   background:linear-gradient(transparent, white, white, white,transparent);
-  animation: animate 0.1s linear infinite;
+  animation: animate2 6s linear infinite;
 }
 @keyframes animate {
   0%{
@@ -895,7 +895,7 @@ body::-webkit-scrollbar-track {
 .card1 .imgBx .card1-name{
   position: absolute;
   z-index: 10;
-  width: calc(100% -20px);
+
   height: calc(100% - 20px);
   left: -3%;
 }

@@ -1,7 +1,7 @@
 // Context 대한 내용은 공식 홈페이지 참조
 // Context를 사용해서, value값도 현재 파일에서 지정하고 내보내기
 
-import { useState } from "react";
+import { useCallback, useState } from "react";
 import { createContext } from "react";
 import { NavItem } from "react-bootstrap";
 import Profile from "../page/Profile";
@@ -13,7 +13,7 @@ const DataProvider = ({children}) => {
     // 사용할 값들을 useState를 통해 값을 들고옴
     // 유저정보  {name: "홍길동", profile : 사진, likelist : [] }
     const [user, setUser] = useState({name: "이재용",birthday: "1998년 01월 01일", profile : null, likelist : [] });
-    
+    const SetUserContext = createContext(() => {});
     const [mysave, setMysave] = useState([
         {
             profileName : "문일윤"
@@ -84,23 +84,32 @@ const DataProvider = ({children}) => {
     ])
     const [commentCount, setCommentCount] = useState(3);
 
+    // 찜리스트 한번에 지워줌
+    // ...user로 이전값 유지 안해주면 전부다 삭제됨
+    const onRemove = () => {
+        setUser({...user,likelist : []})
+    }
     
+    // 할일 filter로 지우기
+    // button onClick에서 클릭될때 받은 id와 현재 배열에있는 id 를 비교
+    const handleClick = useCallback((id) => {                                  //배열에 있는 id
+        setUser(user.filter(data => data.id !== id));
+      },[user]) // todoData가 바뀔때만
     
     // 사용할 value 값을 state와 action 분리해서 넣어둠
     const value = {
         state : {user, productList, allComments, commentCount, mysave},
-        action : {setUser, setProductList, setAllComments, setCommentCount, setMysave}
+        action : {setUser, setProductList, setAllComments, setCommentCount, setMysave, onRemove, handleClick}
     };
     // DataProvider를 사용할때 DataContext.Provider를 사용할수 있도록함
     // 이때 children은 Provider을 쓸때 데이터를 공용을 쓰는 컴포넌트들
 
-    const onRemove = (productId) => {
-        setProductList(productList.filter(productLists => productLists.productId !== productId));
-    }
+
     return (
         <div>
-            <DataContext.Provider value={value} onRemove={onRemove} >{children}</DataContext.Provider>
-            
+            <DataContext.Provider value={value}>
+                {children}
+            </DataContext.Provider>
         </div>
     )
 };
