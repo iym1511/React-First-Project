@@ -69,14 +69,14 @@ const Profile = () => {
                     <div>
                     {/* 이름과 찜목록을 출력 */}
                     <hr></hr>
-                    <h2 className="like-title">장바구니</h2>
+                    <h2 className="like-title">찜 목록</h2>
                     <ul className="like-list">
                     <div className="like-border">
                         <span>Car Name</span>
                         <span> 가격</span>
                         <span></span>
                         <span></span>
-                        <button onClick={action.onRemove} style={{backgroundColor:"#131313",border:"1px solid gray",borderRadius:"10px",color:"white",fontWeight:"bold"}}>전체삭제</button>
+                        <button onClick={action.onRemove} style={{backgroundColor:"#131313",border:"1px solid gray",borderRadius:"10px",color:"white",fontWeight:"bold", marginBottom:"10px"}}>전체삭제</button>
                     </div>
                     {
                         state.user.likelist.map((like)=>(<li className="like-name" >

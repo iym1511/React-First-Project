@@ -36,7 +36,7 @@ const Home = ({menu, movePage}) => {
     const settings = {
         dots: false,
         infinite: true,
-        speed: 500,
+        speed: 1000,
         slidesToShow: 3,
         slidesToScroll: 1,
         nextArrow: <SampleNextArrow />,
@@ -51,7 +51,9 @@ const Home = ({menu, movePage}) => {
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 3000
+        autoplaySpeed: 2000,
+        pauseOnHover: false, //마우스 올려도 안멈춤
+        pauseOnFocus: false,
     };
     
 
