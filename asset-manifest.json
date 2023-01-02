@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/React-First-Project/static/css/main.37a0e50e.css",
-    "main.js": "/React-First-Project/static/js/main.2493b290.js",
+    "main.js": "/React-First-Project/static/js/main.af401fe9.js",
     "static/js/787.a61f225c.chunk.js": "/React-First-Project/static/js/787.a61f225c.chunk.js",
     "static/media/main.jpg": "/React-First-Project/static/media/main.72cee254bf08f064cb99.jpg",
     "static/media/img1.daumcdn.jpg": "/React-First-Project/static/media/img1.daumcdn.c2882935af558e53db1a.jpg",
@@ -23,18 +23,18 @@
     "static/media/fadeimg2.jpg": "/React-First-Project/static/media/fadeimg2.7b3a944bc9644ef03a82.jpg",
     "static/media/fadeimg3.jpg": "/React-First-Project/static/media/fadeimg3.e9414b115ee9188ac472.jpg",
     "static/media/1.jpg": "/React-First-Project/static/media/1.4269dcc37e4d90999364.jpg",
-    "static/media/BMW_White_Logo.svg": "/React-First-Project/static/media/BMW_White_Logo.7fc851202d41ef258cc2.svg",
+    "static/media/BMW_White_Logo.svg": "/React-First-Project/static/media/BMW_White_Logo.3ee1e566441063641011.svg",
     "static/media/slick.svg": "/React-First-Project/static/media/slick.2630a3e3eab21c607e21.svg",
     "static/media/slick.eot": "/React-First-Project/static/media/slick.a4e97f5a2a64f0ab1323.eot",
     "static/media/slick.ttf": "/React-First-Project/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/React-First-Project/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/React-First-Project/index.html",
     "main.37a0e50e.css.map": "/React-First-Project/static/css/main.37a0e50e.css.map",
-    "main.2493b290.js.map": "/React-First-Project/static/js/main.2493b290.js.map",
+    "main.af401fe9.js.map": "/React-First-Project/static/js/main.af401fe9.js.map",
     "787.a61f225c.chunk.js.map": "/React-First-Project/static/js/787.a61f225c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.37a0e50e.css",
-    "static/js/main.2493b290.js"
+    "static/js/main.af401fe9.js"
   ]
 }
